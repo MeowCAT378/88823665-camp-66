@@ -1,0 +1,110 @@
+h1 {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 20px;
+    color: #ff8d02;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    border: 2px groove #cf8702;
+    border-radius: 7%;
+    transition: background-color 0.5s ease;
+}
+
+h1:hover {
+    background-color: #cfa115;
+}
+
+.BlackGround {
+    font-family: "Chakra Petch", sans-serif;
+    color: #ff8c00;
+    border-radius: 3%;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 15px solid #d78117;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    font-family: "Chakra Petch", sans-serif;
+    outline: none;
+    border: 5px solid #dd9e0b;
+}
+
+body {
+    font-family: "Chakra Petch", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: url('C:/Users/yothi/Downloads/Beppu-Onsen_ss_1450937165.jpg');
+    background-size: cover;
+}
+
+
+body:hover {
+    background: url('.4s.jpg');
+    background-size: cover;
+}
+
+.BTN {
+    font-family: "Chakra Petch", sans-serif;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+button[type="reset"] {
+    font-family: "Chakra Petch", sans-serif;
+    background-color: #920505;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="reset"]:hover {
+    background-color: #FF5C5C;
+}
+
+button[type="submit"] {
+    font-family: "Chakra Petch", sans-serif;
+    background-color: #059212;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #32B531;
+}
+button[type="reset"]:hover, button[type="submit"]:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 16px;
+        width: 90%;
+    }
+
+    .BTN {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
